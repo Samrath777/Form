@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="text/css" href="gggggggg.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission Form</title>
+    <title> Job Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -83,7 +84,7 @@
         }
         .photo-placeholder {
             width: 100px;
-            height: 100px;
+            height: 140px;
             border: 1px solid #000;
             cursor: pointer;
             background-color: #f0f0f0;
@@ -127,9 +128,9 @@
 <body>
 
     <div class="container" id="form-container">
-        <h1>ACROPOLIS INSTITUTE OF TECHNOLOGY & RESEARCH, INDORE</h1>
-        <h2>ADMISSION FORM</h2>
-        <h3>BE/MBA/MCA</h3>
+        <h1>GLOBAL GARNER SEFVICES LIMITED, AHMEDABAD</h1>
+        <h2>JOB FORM</h2>
+        <h3>IT/HR/CA</h3>
 
         <div class="photo">
             <label class="photo-placeholder" for="upload-photo">
@@ -141,13 +142,13 @@
 
         <form id="admission-form" action="https://formspree.io/f/xjkbqqae" method="POST" onsubmit="return showThankYouMessage(event)">
             <div class="form-group">
-                <label for="name">Name:</label>
+                <label for="name">FullName:</label>
                 <input type="text" id="name" name="name" pattern="[A-Za-z]+" title="Only alphabets are allowed." required>
             </div>
 
             <div class="form-group">
-                <label for="father-name">Father’s Name:</label>
-                <input type="text" id="father-name" name="father-name" pattern="[A-Za-z]+" title="Only alphabets are allowed." required>
+                <label for="father-name">SurName:</label>
+                <input type="text" id="Surname" name="sur-name" pattern="[A-Za-z]+" title="Only alphabets are allowed." required>
             </div>
 
             <div class="form-group">
@@ -170,10 +171,10 @@
                 <label for="category">Category:</label>
                 <select id="category" name="category" required>
                     <option value="">Select Category</option>
-                    <option value="general">General</option>
-                    <option value="obc">OBC</option>
-                    <option value="sc">SC</option>
-                    <option value="st">ST</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Hr">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="CA">CA</option>
                 </select>
             </div>
 
@@ -190,22 +191,22 @@
             </div>
 
             <div class="form-group">
-                <label for="pept-marks">PEPT Marks (Out of 200):</label>
-                <input type="number" id="pept-marks" name="pept-marks" min="0" title="Only numbers are allowed." required>
+                <label for="Applied Position">Applied Position:</label>
+                <input type="text" id="Applied Position" name="Applied Position" min="0" title="Only alphabets are allowed." required>
             </div>
 
             <div class="form-group">
-                <label for="merit-rank">All India Merit Rank:</label>
-                <input type="number" id="merit-rank" name="merit-rank" min="1" title="Only numbers are allowed." required>
+                <label for="Salary Expectations">Salary Expectations:</label>
+                <input type="number" id="Salary Expectations" name="Salary Expectations" min="1" title="Only numbers are allowed." required>
             </div>
 
             <div class="form-group">
-                <label for="met-marks">MET/Pre MCA Marks (For MBA/MCA only):</label>
-                <input type="number" id="met-marks" name="met-marks" min="0" title="Only numbers are allowed." required>
+                <label for="Previous Experiences">Previous Experiences:</label>
+                <input type="text" id="Previous Experiences" name="Previous Experiences" min="0" title="Only numbers are allowed." required>
             </div>
 
             <div class="form-group">
-                <label for="branch-preference">Branch Preference:</label>
+                <label for="branch-preference">Branch Prefrence:</label>
                 <input type="text" id="branch-preference" name="branch-preference" placeholder="Enter your preferred branch" required>
             </div>
 
@@ -245,6 +246,7 @@
             return true; // Allow the form to be submitted
         }
     </script>
+
 
 </body>
 </html>
